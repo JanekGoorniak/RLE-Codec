@@ -14,7 +14,7 @@ public class Main
     {
         String testData = "AAAAAAAAAABBBBBBBBBBBBBBBBCCCCCCDEFGGHHHIIIIIIII";
         EncodedData encodedData = encode_rle(testData);
-        System.out.println(encodedData.data);
+        System.out.println(encodedData.toString("$"));
         System.out.println(decode_rle(encodedData));
     }
 }

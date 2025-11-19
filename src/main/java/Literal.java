@@ -13,4 +13,9 @@ public class Literal implements Decodable
         //returns the literal as a String
         return String.valueOf(literal);
     }
+
+    @Override
+    public String toString(String seriesSign) {
+        return String.valueOf(literal);
+    }
 }

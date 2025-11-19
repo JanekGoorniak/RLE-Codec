@@ -15,4 +15,9 @@ public class Series implements Decodable
         //returns the string of [count] literals
         return String.valueOf(literal).repeat(Math.max(0, count));
     }
+
+    @Override
+    public String toString(String seriesSign) {
+        return seriesSign + count + literal;
+    }
 }

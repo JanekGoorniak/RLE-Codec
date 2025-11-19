@@ -53,4 +53,15 @@ public class EncodedData implements Decodable
         }
         return sb.toString();
     }
+
+    @Override
+    public String toString(String seriesSign)
+    {
+        StringBuilder sb = new StringBuilder();
+        for(Decodable d : data)
+        {
+            sb.append(d.toString(seriesSign));
+        }
+        return sb.toString();
+    }
 }
